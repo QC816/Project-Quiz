@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Match and win our best-selling pizza!</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<!------- HEADER -------->
+	<header class="wrapperA">
+		<img src="Domino_logo.png" alt="Domino">
+		<div>
+			<h1>Match and win</h1>
+			<h2>our best-selling pizza!</h2>
+		</div>
+	</header>
+
+	<!------- MAIN -------->
+	<main>
+		<form class="questions wrapperB">
+			<div class="question question1">
+				<h3>Can you guess what style of crust is our best-selling pizza made from?</h3>
+
+				<input type="checkbox" name="crust" id="thin" value="Thin crust">
+				<label for="thin">Thin crust</label>
+
+				<input type="checkbox" name="crust" id="thick" value="Thick crust">
+				<label for="thick">Thick crust</label>
+
+				<input type="checkbox" name="crust" id="deep" value="Deep Dish">
+				<label for="deep">Deep dish</label>
+			</div>
+
+			<div class="question question2">
+				<h3>What kind of sauce do you think it is made with?</h3>
+
+				<input type="checkbox" name="sauce" id="tomatoSauce" value="Tomato sauce">
+				<label for="tomatoSauce">Tomato sauce</label>
+
+				<input type="checkbox" name="sauce" id="pesto" value="Basil pesto">
+				<label for="pesto">Basil pesto</label>
+
+				<input type="checkbox" name="sauce" id="noSauce" value="No sauce">
+				<label for="noSauce">No sauce</label>
+			</div>
+
+			<div class="question question3">
+				<h3>Choose maximum 3 type of cheeses from the list below</h3>
+
+				<input type="checkbox" name="cheese" id="provolone" value="Provolone">
+				<label for="provolone">Provolone</label>
+
+				<input type="checkbox" name="cheese" id="mozzarella" value="Mozzarella">
+				<label for="mozzarella">Mozzarella</label>
+
+				<input type="checkbox" name="cheese" id="cheddar" value="Cheddar">
+				<label for="cheddar">Cheddar</label>
+
+				<input type="checkbox" name="cheese" id="parmesan" value="Parmesan">
+				<label for="parmesan">Parmesan</label>
+
+				<input type="checkbox" name="cheese" id="gorgonzola" value="Gorgonzola">
+				<label for="gorgonzola">Gorgonzola</label>
+			</div>
+		
+			<div class="question question4">
+				<h3>Choose maximum 5 type of toppingd from the list below</h3>
+
+				<input type="checkbox" name="toppings" id="pepperoni" value="Pepperoni">
+				<label for="pepperoni">Pepperoni</label>
+				
+				<input type="checkbox" name="toppings" id="onion" value="Red onions">
+				<label for="onion">Red onions</label>
+
+				<input type="checkbox" name="toppings" id="blackOlives" value="Black olives">
+				<label for="blackOlives">Black olives</label>
+
+				<input type="checkbox" name="toppings" id="greenPepper" value="Fresh green peppers">
+				<label for="greenPepper">Fresh green peppers</label>
+
+				<input type="checkbox" name="toppings" id="tomatoes" value="Tomatoes">
+				<label for="tomatoes">Tomatoes</label>
+
+				<input type="checkbox" name="toppings" id="smokedBacon" value="Smoked bacon">
+				<label for="smokedBacon">Smoked bacon</label>
+
+				<input type="checkbox" name="toppings" id="mushroom" value="Fresh mushrooms">
+				<label for="mushroom">Fresh mushrooms</label>
+
+				<input type="checkbox" name="toppings" id="steakSlices" value="Steak slices">
+				<label for="steakSlices">Steak slices</label>
+
+				<input type="checkbox" name="toppings" id="spinach" value="Baby spinach">
+				<label for="spinach">Baby spinach</label>
+
+				<input type="checkbox" name="toppings" id="redPepper" value="Roasted red pepper">
+				<label for="redPepper">Roasted red pepper</label>
+
+				<input type="checkbox" name="toppings" id="sausage" value="Italian sausage">
+				<label for="sausage">Italian sausage</label>
+
+				<input type="checkbox" name="toppings" id="groundBeef" value="Ground beef">
+				<label for="groundBeef">Ground beef</label>
+
+				<input type="checkbox" name="toppings" id="greenPepper" value="Pineapple">
+				<label for="pineapple">Pineapple</label>
+
+				<input type="checkbox" name="toppings" id="chickenStrips" value="Chicken strips">
+				<label for="chickenStrips">Chicken strips</label>
+
+				<input type="checkbox" name="toppings" id="ham" value="Ham">
+				<label for="ham">Ham</label>
+			</div>
+
+			<div class="question question5">
+				<h3>Any extra?</h3>
+
+				<input type="checkbox" name="extra" id="crackedRedPepper" value="Cracked red pepper">
+				<label for="crackedRedPepper">Cracked red pepper</label>
+
+				<input type="checkbox" name="extra" id="garlicPowder" value="Garlic powder">
+				<label for="garlicPowder">Garlic powder</label>
+
+				<input type="checkbox" name="extra" id="oliveOil" value="Olive oil">
+				<label for="oliveOil">Olive oil</label>
+			</div>
+
+			<input type="submit" value="Submit">
+			<button>Try again</button>
+		</form>
+
+		<section class="monitoring wrapperB">
+			<p>Matched:</p>
+			<span class="counter">0</span><span>/ 10</span>
+		</section>
+
+	</main>
+
+	<!-------- SECTION --------->
+	
+
+	<!--------- OVERLAY ---------->
+	<div class="congrats wrapper">
+		<h1>Congraulations! You won!!!</h1>
+		<img src="Pizza-Deluxe.png" alt="">
+		<p>It's our Delux pizza!</p>
+	</div>
+
+
+	<!--------- SCRIPTS  --------->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

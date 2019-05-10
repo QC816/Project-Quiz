@@ -1,0 +1,75 @@
+Matches and win our best-selling pizza!
+A quiz area with select button & text input, and a counter
+
+click play 
+loop through question 1 to 5;
+
+Load question 1
+Question 1: whole grain or white?
+set the counter to 0
+if white is selected and submitted, increase the counter to 1;
+else log counter to 0;
+
+Display question 2 (???)
+
+Question 2
+tomato sauce, pesto, no sauce? (tomato sauce --> counter + 1, else 0)
+
+Question 3
+choose cheese from the list (can be more than 1 choice):
+cheddar cheese, parmesan cheese, Provolone, mozzarella & gorganzola cheese (cheddar cheese & parmesan cheese --> counter + 1 each, else 0)
+
+Question 4
+choose toppings from the provided list:
+pepperoni, Italian sausage, fresh green peppers, fresh mushrooms, fresh onions, black olives, tomatoes, smoked bacon, steak slices, baby spinach, roasted red pepper, ground pork, pineapple, chicken strips and ham.
+(pepperoni, Italian sausage, fresh green peppers, fresh mushrooms, fresh onions,  + 1 score each, else 0)
+
+Question 5
+extra cracked red pepper or garlic powder? (cracked red pepper --> score + 1, else 0)
+
+If getting total 10 points: display "Yay! You won a 14" of our Delux pizza!!!
+
+start again
+
+
+const start = document.getElementById("start");
+const question = document.getElementById("question");
+const counter = document.getElementById("counter");
+const choiceA = document.getElementById("A");
+const choiceB = document.getElementById("B");
+const choiceC = document.getElementById("C");
+const start = document.getElementById("start");
+
+let questions = [
+	{
+		question1 : "question1 in html",
+		choiceA : "the first choice in html",
+		choiceB : "the second choice in html"
+	},
+
+	{
+		question2 : "question2 in html",
+		choiceA : "the first choice in html",
+		choiceB : "the second choice in html",
+		choiceC : "the third choice in html"
+	},
+	...
+]
+
+	questions[0].question
+	questions[0].choiceA
+	questions[0].choiceB
+	questions[0].choiceC
+
+array = [a, b, c, d]
+
+let lastQuestionIndex = question.length - 1;
+
+array.length = 4
+array[3] = d
+
+function renderQuestion(){
+	
+	
+}
+
