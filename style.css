@@ -10,7 +10,7 @@ img{
 
 /*------- GENERAL STYLES -------*/
 
-/*corporate red rgb(232, 0, 0);
+/*corporate red rgb(211, 25, 46);
 /*corporate blue rgb(0, 82, 133);*/
 
 .wrapperA,
@@ -39,7 +39,7 @@ p {
 
 h1,
 h2 {
-	color: grey;
+	color: rgb(211, 25, 46);
 }
 
 .congrats {
@@ -54,7 +54,7 @@ body {
 
 header {
 	display: flex;
-	border: 10px dotted lightgrey;
+	border: 10px dotted rgb(0, 82, 133);
 	border-radius: 20px;
 	justify-content: space-around;
 	align-items: center;
@@ -92,6 +92,7 @@ header img {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	background: lightgrey;
+	border: 10px dotted rgb(211, 25, 46);
 	border-radius: 20px;
 	position: absolute;
 	top: 130px;
