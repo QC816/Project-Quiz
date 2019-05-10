@@ -62,7 +62,20 @@ $(document).ready(function(){
     if (counter === 10) {
       $(".congrats").fadeIn();
     }
+
+    $(".monitor").addClass("monitorLightUp");
+    $("input[type='submit']").fadeOut();
 	});
+
+// const checkbox = $("input[type='checkbox']");
+
+//   $(".tryAgain").click(function(){
+//     location.reload();
+//     if (input[type='checkbox'] = true) {
+      
+//     }
+//   });
+
 });
 
 // This can also work for multiple values:

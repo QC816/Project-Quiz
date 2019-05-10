@@ -50,7 +50,7 @@ h2 {
 	left: 0;
 	z-index: 50;
 	background: white;
-	/*display: none;*/
+	display: none;
 }
 
 .congrats h1 {
@@ -234,7 +234,7 @@ input[type="submit"]:hover {
 }
 
 .monitorLightUp {
-	box-shadow: 2px 2px 5px yellow;
+	box-shadow: 2px 2px 10px yellow;
 }
 
 .monitor p {
