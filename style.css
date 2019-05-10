@@ -43,7 +43,43 @@ h2 {
 }
 
 .congrats {
-	display: none;
+	position: absolute;
+	top: -100px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 50;
+	background: white;
+	/*display: none;*/
+}
+
+.congrats h1 {
+	padding: 80px 150px 0 0;
+	font-size: 7rem;
+	text-align: center;
+	text-shadow: 3px 3px 8px yellow;
+}
+
+.congrats p {
+	font-size: 2.4rem;
+	font-weight: 600;
+	color: black;
+	text-align: right;
+	text-shadow: 3px 3px 8px yellow;
+}
+
+.congrats {
+	background-image: url(Pizza-Deluxe.png);
+	background-position: center;
+	background-size: 60%;
+	background-repeat: no-repeat;
+}
+
+.text {
+	transform: rotate(340deg);
+	position: absolute;
+	left: 150px;
+	top: 150px;
 }
 
 h3 {
@@ -97,13 +133,9 @@ header img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	/*background: lightgrey;*/
 	border: 10px dotted rgb(211, 25, 46);
 	border-radius: 20px;
 	margin: 100px auto;
-	/*position: absolute;
-	top: 130px;
-	left: 12.5%;*/
 }
 
 .question {
@@ -157,11 +189,68 @@ input[type="checkbox"] {
 
 input[type=checkbox]:checked {
     background-color: rgb(211, 25, 46);
+    border: 5px solid yellow;
 }
 
 label {
 	padding: 0 16px 0 1px;
 	position: relative;
 	top: -9px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	right: 150px;
+	bottom: 15px;
+}
+
+.monitor, 
+input[type="submit"],
+.tryAgain {
+	color: white;
+	border: none;
+	border-radius: 50%;
+	margin: 7px;
+	width: 100px;
+	height: 100px;
+}
+
+input[type="submit"]:hover {
+	border: 10px dotted rgb(0, 82, 133);
+	background: white;
+	color: black;
+}
+
+.tryAgain:hover {
+	border: 10px dotted yellow;
+	background: white;
+	color: black;
+}
+
+.monitor {
+	background: grey;
+}
+
+.monitorLightUp {
+	box-shadow: 2px 2px 5px yellow;
+}
+
+.monitor p {
+	text-align: center;
+}
+
+.monitor p:first-of-type {
+	padding-top: 33px;
+}
+
+input[type="submit"] {
+	background:  rgb(211, 25, 46);
+	color: white;
+}
+
+.tryAgain {
+	background: rgb(0, 82, 133);
 }
 
