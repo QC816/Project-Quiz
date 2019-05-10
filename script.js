@@ -67,16 +67,25 @@ $(document).ready(function(){
     $("input[type='submit']").fadeOut();
 	});
 
-// const checkbox = $("input[type='checkbox']");
+  $(".tryAgain").click(function(){
+    location.reload();
+  });
 
-//   $(".tryAgain").click(function(){
-//     location.reload();
-//     if (input[type='checkbox'] = true) {
-      
-//     }
-//   });
+  const checkboxes = $('input[type="checkbox"]:not([id="ALL"])');
+    $('input[type="checkbox"]').on({
+        'change': function(){
+      const checkbox = $(this);
 
+      if(checkbox.attr('id') == 'ALL'){
+          checkboxes.prop('checked',checkbox.prop('checked')).checkboxradio('refresh');
+      }
+      else {
+          $('#ALL').prop('checked',(checkboxes.length == $('input[type="checkbox"]:checked:not([id="ALL"])').length)).checkboxradio('refresh');
+      }
+    }
+  });
 });
+
 
 // This can also work for multiple values:
 // function arraysEqual(arr1, arr2) {
