@@ -24,7 +24,7 @@ img{
 }
 
 .wrapperB {
-	max-width: 80%;
+	max-width: 90%;
 }
 
 html {
@@ -163,12 +163,12 @@ header img {
 	padding-bottom: 30px;
 }
 .question4 {
-	width: 66.7%;
+	width: 58%;
 	border-right: 10px dotted lightgrey;
 }
 
 .question5 {
-	width: 33.3%;
+	width: 42%;
 }
 
 .answers {

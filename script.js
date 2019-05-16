@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 		if (cheeseValue.toString() === "Cheddar,Parmesan"){
 			counter = counter + 2;
-		}; 
+    };
 		$(".counter").text(counter);
 
     if (toppingsValue.toString() === "Pepperoni,Red onions,Fresh green peppers,Fresh mushrooms,Italian sausage"){
@@ -54,17 +54,22 @@ $(document).ready(function(){
     };
     $("counter").text(counter);
 
-    if (extraValue === "Cracked red pepper"){
+    if (extraValue === "Pepper flakes"){
       counter = counter + 1;
     }
     $(".counter").text(counter);
 
     if (counter === 10) {
-      $(".congrats").fadeIn();
+      $(".congrats").delay(1000).fadeIn(300);
+      $("input[type='submit']").css('visibility','hidden');
+      $(".tryAgain").css('visibility','hidden');
     }
 
-    $(".monitor").addClass("monitorLightUp");
-    $("input[type='submit']").fadeOut();
+    else {
+      $(".monitor").addClass("monitorLightUp");
+      $("input[type='submit']").css('visibility','hidden');
+    }
+
 	});
 
   $(".tryAgain").click(function(){
